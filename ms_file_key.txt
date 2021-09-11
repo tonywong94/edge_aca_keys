@@ -29,21 +29,21 @@
  
 # PHANGS-ALMA examples:
 
-#circinus_1     2018.1.01321 	all  7m	  1	2018.1.01321.S/science_goal.uid___A001_X133d_X3c35/group.uid___A001_X133d_X3c36/member.uid___A001_X133d_X3c37/calibrated/uid___A002_Xd845af_Xa5a9.ms
+#circinus_1     2018.1.01321    all  7m   1 2018.1.01321.S/science_goal.uid___A001_X133d_X3c35/group.uid___A001_X133d_X3c36/member.uid___A001_X133d_X3c37/calibrated/uid___A002_Xd845af_Xa5a9.ms
 
-#circinus_2     2018.1.01321	all  7m	  2	2018.1.01321.S/science_goal.uid___A001_X133d_X3c2f/group.uid___A001_X133d_X3c30/member.uid___A001_X133d_X3c31/calibrated/uid___A002_Xd845af_Xab60.ms
+#circinus_2     2018.1.01321    all  7m   2 2018.1.01321.S/science_goal.uid___A001_X133d_X3c2f/group.uid___A001_X133d_X3c30/member.uid___A001_X133d_X3c31/calibrated/uid___A002_Xd845af_Xab60.ms
 
 #
 ##########################################################################
 
-UGC11680NED02  edge all    7m  1  working/uid___A002_Xe4f0a6_X7f4d.ms
-UGC04240    edge    all    7m  1  working/uid___A002_Xe539c7_X7f57.ms
-VV488NED02  edge    all    7m  1  working/uid___A002_Xe64b7b_X147e5.ms
-UGC04455    edge    all    7m  1  working/uid___A002_Xe50c9e_X4689.ms.split.cal
-UGC05396    edge    all    7m  1  working/uid___A002_Xe50c9e_X4d64.ms.split.cal
-NGC3300     edge    all    7m  1  working/uid___A002_Xe50c9e_X53da.ms.split.cal
-UGC11792    edge    all    7m  1  working/uid___A002_Xe539c7_X2f54.ms.split.cal
-MCG-01-01-012   edge  all   7m  1  working/uid___A002_Xe539c7_X4000.ms.split.cal
-UGC11982     edge    2,13~22    7m  1  working/uid___A002_Xe64b7b_X196.ms.split.cal
-NGC7364     edge    3~12    7m  1  working/uid___A002_Xe64b7b_X196.ms.split.cal
-NGC2449     edge    all    7m  1  working/uid___A002_Xe64b7b_Xf168.ms.split.cal
+UGC11680NED02   edge    all     7m  1  uid___A002_Xe4f0a6_X7f4d.ms
+# UGC04240        edge    all     7m  1  working/uid___A002_Xe539c7_X7f57.ms
+# VV488NED02      edge    all     7m  1  working/uid___A002_Xe64b7b_X147e5.ms
+# UGC04455        edge    all     7m  1  working/uid___A002_Xe50c9e_X4689.ms.split.cal
+# UGC05396        edge    all     7m  1  working/uid___A002_Xe50c9e_X4d64.ms.split.cal
+# NGC3300         edge    all     7m  1  working/uid___A002_Xe50c9e_X53da.ms.split.cal
+# UGC11792        edge    all     7m  1  working/uid___A002_Xe539c7_X2f54.ms.split.cal
+# MCG-01-01-012   edge    all     7m  1  working/uid___A002_Xe539c7_X4000.ms.split.cal
+# UGC11982        edge    2,13~22 7m  1  working/uid___A002_Xe64b7b_X196.ms.split.cal
+# NGC7364         edge    3~12    7m  1  working/uid___A002_Xe64b7b_X196.ms.split.cal
+# NGC2449         edge    all     7m  1  working/uid___A002_Xe64b7b_Xf168.ms.split.cal
