@@ -1,0 +1,27 @@
+##########################################################################
+# SINGLEDISH KEY
+##########################################################################
+
+# Key to define files of user-supplied single dish FITS files.
+
+# Currently (and for the foreseeable future) single dish FITS files
+# are created by an independent total power pipeline. The pipeline
+# requires that any single dish data used for feathering be provided
+# by the user. This file defines the locations of those data and maps
+# them to a target and product.
+ 
+# The syntax for the key is space or tab delimited:
+
+# Column 1: target name
+# Column 3: file name (to be searched under 'singledish_root' directory)
+# Column 2: spectral product for this single dish image cube.
+
+# PHANGS-ALMA examples:
+
+##########################################################################
+
+# DELETE AFTER HERE FOR NEW PROJECT, FULL PHANGS-ALMA CASE FOLLOWS
+
+# None for sims right now
+
+# ic5332	    	co21	cycle3_data/ALMA_TP.IC_5332.CO21.v0p2.image.VLSRK.fits
