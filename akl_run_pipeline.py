@@ -75,8 +75,8 @@ this_pph.set_feather_configs()
 # Switches for what steps to run
 
 do_staging = False
-do_imaging = True
-do_postprocess = False
+do_imaging = False
+do_postprocess = True
 do_stats = False
 
 ##############################################################################
