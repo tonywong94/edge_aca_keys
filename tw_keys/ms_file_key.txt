@@ -1,0 +1,176 @@
+##########################################################################
+# MEASUREMENT SET FILE/INPUT KEY
+##########################################################################
+
+# Key to define files of input visibility data.
+
+# The pipeline begins with calibrated visibility data, which are
+# defined in this file. In this key, each measurement set (column 4)
+# is mapped to an individual target, project, array tag, and numerical
+# tag ('multiobs' suffix).
+ 
+# The syntax for the key is space or tab delimited:
+ 
+# Column 1: target name
+# Column 2: project tag
+# Column 3: science field name ("all" is fine)
+# Column 4: array tag (7m, C, etc.)
+# Column 5: observation number
+# Column 6: file with path relative to an ms_root
+
+# The paths are relative to ANY ms_root directory defined in the
+# master key.
+
+# The targets need to map to the target definitions, and the array
+# tags need to mesh with the config definitions.
+
+# The project tag should probably be the VLA or ALMA project code or
+# something similar.
+ 
+# PHANGS-ALMA examples:
+#circinus_1     2018.1.01321    all  7m   1 2018.1.01321.S/science_goal.uid___A001_X133d_X3c35/group.uid___A001_X133d_X3c36/member.uid___A001_X133d_X3c37/calibrated/uid___A002_Xd845af_Xa5a9.ms
+#circinus_2     2018.1.01321    all  7m   2 2018.1.01321.S/science_goal.uid___A001_X133d_X3c2f/group.uid___A001_X133d_X3c30/member.uid___A001_X133d_X3c31/calibrated/uid___A002_Xd845af_Xab60.ms
+
+##########################################################################
+
+# pre-2021
+UGC11680NED02 2019.2.00028.S UGC11680NED02  7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X529/member.uid___A001_X14c3_X52a/calibrated/uid___A002_Xe4f0a6_X7f4d.ms
+UGC04455      2019.2.00028.S UGC04455       7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X538/member.uid___A001_X14c3_X539/calibrated/uid___A002_Xe50c9e_X4689.ms
+UGC04240      2019.2.00028.S UGC04240       7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X53b/member.uid___A001_X14c3_X53c/calibrated/uid___A002_Xe539c7_X7f57.ms
+UGC05396      2019.2.00028.S UGC05396       7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X551/member.uid___A001_X14c3_X552/calibrated/uid___A002_Xe50c9e_X4d64.ms
+MCG-01-01-012 2019.2.00028.S MCG-01-01-012  7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X572/member.uid___A001_X14c3_X573/calibrated/uid___A002_Xe539c7_X4000.ms
+NGC2449       2019.2.00028.S NGC2449        7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X597/member.uid___A001_X14c3_X598/calibrated/uid___A002_Xe64b7b_Xf168.ms
+VV488NED02    2019.2.00028.S VV488NED02     7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5be/member.uid___A001_X14c3_X5bf/calibrated/uid___A002_Xe64b7b_X147e5.ms
+
+# 2 srcs, 1 SB
+NGC7364       2019.2.00028.S NGC7364        7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c4/member.uid___A001_X14c3_X5c5/calibrated/uid___A002_Xe64b7b_X196.ms
+UGC11982      2019.2.00028.S UGC11982       7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c4/member.uid___A001_X14c3_X5c5/calibrated/uid___A002_Xe64b7b_X196.ms
+
+UGC11792      2019.2.00028.S UGC11792       7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5cd/member.uid___A001_X14c3_X5ce/calibrated/uid___A002_Xe539c7_X2f54.ms
+NGC3300       2019.2.00028.S NGC3300        7m  1  pre2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X5e5/group.uid___A001_X14c3_X5fb/member.uid___A001_X14c3_X5fc/calibrated/uid___A002_Xe50c9e_X53da.ms
+
+# 2021
+UGC02099      2019.2.00028.S UGC02099       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X520/member.uid___A001_X14c3_X521/calibrated/uid___A002_Xf096a9_X2304.ms
+
+# 1 src, 2 SBs
+UGC01368      2019.2.00028.S UGC01368       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X523/member.uid___A001_X14c3_X524/calibrated/uid___A002_Xe64b7b_X193e.ms
+UGC01368      2019.2.00028.S UGC01368       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X523/member.uid___A001_X14c3_X524/calibrated/uid___A002_Xf07bba_Xc7b3.ms
+
+# 2 srcs, 2 SBs
+NGC7194       2019.2.00028.S NGC7194        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52c/member.uid___A001_X14c3_X52d/calibrated/uid___A002_Xf0e992_X36c4.ms
+NGC7194       2019.2.00028.S NGC7194        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52c/member.uid___A001_X14c3_X52d/calibrated/uid___A002_Xf0fd41_Xd738.ms
+UGC11958      2019.2.00028.S UGC11958       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52c/member.uid___A001_X14c3_X52d/calibrated/uid___A002_Xf0e992_X36c4.ms
+UGC11958      2019.2.00028.S UGC11958       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52c/member.uid___A001_X14c3_X52d/calibrated/uid___A002_Xf0fd41_Xd738.ms
+
+# 2 srcs, 2 SBs
+NGC7466       2019.2.00028.S NGC7466        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52f/member.uid___A001_X14c3_X530/calibrated/uid___A002_Xf096a9_X1497.ms
+NGC7466       2019.2.00028.S NGC7466        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52f/member.uid___A001_X14c3_X530/calibrated/uid___A002_Xf0b191_X4f1.ms
+UGC12274      2019.2.00028.S UGC12274       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52f/member.uid___A001_X14c3_X530/calibrated/uid___A002_Xf096a9_X1497.ms
+UGC12274      2019.2.00028.S UGC12274       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X52f/member.uid___A001_X14c3_X530/calibrated/uid___A002_Xf0b191_X4f1.ms
+
+UGC12348      2019.2.00028.S UGC12348       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X532/member.uid___A001_X14c3_X533/calibrated/uid___A002_Xee1eb6_X141e4.ms
+UGC08322      2019.2.00028.S UGC08322       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X541/member.uid___A001_X14c3_X542/calibrated/uid___A002_Xee1eb6_X11fc3.ms
+UGC08781      2019.2.00028.S UGC08781       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X544/member.uid___A001_X14c3_X545/calibrated/uid___A002_Xee1eb6_X122c3.ms
+IC1079        2019.2.00028.S IC1079         7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X51c/group.uid___A001_X14c3_X54d/member.uid___A001_X14c3_X54e/calibrated/uid___A002_Xee1eb6_X125e1.ms
+
+# 3 srcs, 2 SBs
+NGC2540       2019.2.00028.S NGC2540        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X554/member.uid___A001_X14c3_X555/calibrated/uid___A002_Xf0b191_X267b.ms
+NGC2540       2019.2.00028.S NGC2540        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X554/member.uid___A001_X14c3_X555/calibrated/uid___A002_Xf138ff_X3574.ms
+NGC2596       2019.2.00028.S NGC2596        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X554/member.uid___A001_X14c3_X555/calibrated/uid___A002_Xf0b191_X267b.ms
+NGC2596       2019.2.00028.S NGC2596        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X554/member.uid___A001_X14c3_X555/calibrated/uid___A002_Xf138ff_X3574.ms
+UGC04245      2019.2.00028.S UGC04245       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X554/member.uid___A001_X14c3_X555/calibrated/uid___A002_Xf0b191_X267b.ms
+UGC04245      2019.2.00028.S UGC04245       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X554/member.uid___A001_X14c3_X555/calibrated/uid___A002_Xf138ff_X3574.ms
+
+# 1 src, 2 SBs
+MCG-02-51-004 2019.2.00028.S MCG-02-51-004  7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X560/member.uid___A001_X14c3_X561/calibrated/uid___A002_Xf0b969_X8a10.ms
+MCG-02-51-004 2019.2.00028.S MCG-02-51-004  7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X560/member.uid___A001_X14c3_X561/calibrated/uid___A002_Xf0fd41_X81d6.ms
+
+UGC11717      2019.2.00028.S UGC11717       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X566/member.uid___A001_X14c3_X567/calibrated/uid___A002_Xed07bd_X5a17.ms
+
+# 2 srcs, 2 SBs
+CGCG429-012   2019.2.00028.S CGCG429-012    7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X569/member.uid___A001_X14c3_X56a/calibrated/uid___A002_Xf0fd41_X10f28.ms
+CGCG429-012   2019.2.00028.S CGCG429-012    7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X569/member.uid___A001_X14c3_X56a/calibrated/uid___A002_Xf0fd41_X111bf.ms
+UGC12250      2019.2.00028.S UGC12250       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X569/member.uid___A001_X14c3_X56a/calibrated/uid___A002_Xf0fd41_X10f28.ms
+UGC12250      2019.2.00028.S UGC12250       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X569/member.uid___A001_X14c3_X56a/calibrated/uid___A002_Xf0fd41_X111bf.ms
+
+# 2 srcs, 2 SBs
+NGC7321       2019.2.00028.S NGC7321        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X56c/member.uid___A001_X14c3_X56d/calibrated/uid___A002_Xf07bba_Xc094.ms
+NGC7321       2019.2.00028.S NGC7321        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X56c/member.uid___A001_X14c3_X56d/calibrated/uid___A002_Xf07bba_Xc40b.ms
+NGC7489       2019.2.00028.S NGC7489        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X56c/member.uid___A001_X14c3_X56d/calibrated/uid___A002_Xf07bba_Xc094.ms
+NGC7489       2019.2.00028.S NGC7489        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X56c/member.uid___A001_X14c3_X56d/calibrated/uid___A002_Xf07bba_Xc40b.ms
+
+NGC0155       2019.2.00028.S NGC0155        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X56f/member.uid___A001_X14c3_X570/calibrated/uid___A002_Xeff678_X28c4.ms
+
+# 2 srcs, 2 SBs
+NGC0180       2019.2.00028.S NGC0180        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X575/member.uid___A001_X14c3_X576/calibrated/uid___A002_Xf138ff_X19f7.ms
+NGC0180       2019.2.00028.S NGC0180        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X575/member.uid___A001_X14c3_X576/calibrated/uid___A002_Xf138ff_X1fe6.ms
+UGC00335NED02 2019.2.00028.S UGC00335NED02  7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X575/member.uid___A001_X14c3_X576/calibrated/uid___A002_Xf138ff_X19f7.ms
+UGC00335NED02 2019.2.00028.S UGC00335NED02  7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X575/member.uid___A001_X14c3_X576/calibrated/uid___A002_Xf138ff_X1fe6.ms
+
+UGC01938      2019.2.00028.S UGC01938       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X587/member.uid___A001_X14c3_X588/calibrated/uid___A002_Xf07bba_Xcb19.ms
+NGC0768       2019.2.00028.S NGC0768        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X550/group.uid___A001_X14c3_X58d/member.uid___A001_X14c3_X58e/calibrated/uid___A002_Xf096a9_X1f9e.ms
+
+# 3 srcs, 2 SBs
+IC2341        2019.2.00028.S IC2341         7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59a/member.uid___A001_X14c3_X59b/calibrated/uid___A002_Xed07bd_X2de7.ms
+IC2341        2019.2.00028.S IC2341         7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59a/member.uid___A001_X14c3_X59b/calibrated/uid___A002_Xee1eb6_Xca43.ms
+NGC2554       2019.2.00028.S NGC2554        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59a/member.uid___A001_X14c3_X59b/calibrated/uid___A002_Xed07bd_X2de7.ms
+NGC2554       2019.2.00028.S NGC2554        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59a/member.uid___A001_X14c3_X59b/calibrated/uid___A002_Xee1eb6_Xca43.ms
+NGC2595       2019.2.00028.S NGC2595        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59a/member.uid___A001_X14c3_X59b/calibrated/uid___A002_Xed07bd_X2de7.ms
+NGC2595       2019.2.00028.S NGC2595        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59a/member.uid___A001_X14c3_X59b/calibrated/uid___A002_Xee1eb6_Xca43.ms
+
+# 1 src, 2 SBs
+MCG-01-10-015 2019.2.00028.S MCG-01-10-015  7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59d/member.uid___A001_X14c3_X59e/calibrated/uid___A002_Xf0b969_X97bb.ms
+MCG-01-10-015 2019.2.00028.S MCG-01-10-015  7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X59d/member.uid___A001_X14c3_X59e/calibrated/uid___A002_Xf0fd41_X11d76.ms
+
+NGC1542       2019.2.00028.S NGC1542        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5a0/member.uid___A001_X14c3_X5a1/calibrated/uid___A002_Xf010cd_X350b.ms
+
+# 2 srcs, 2 SBs
+NGC0731       2019.2.00028.S NGC0731        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5a9/member.uid___A001_X14c3_X5aa/calibrated/uid___A002_Xf0b969_X92c9.ms
+NGC0731       2019.2.00028.S NGC0731        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5a9/member.uid___A001_X14c3_X5aa/calibrated/uid___A002_Xf0e992_X4711.ms
+UGC01123      2019.2.00028.S UGC01123       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5a9/member.uid___A001_X14c3_X5aa/calibrated/uid___A002_Xf0b969_X92c9.ms
+UGC01123      2019.2.00028.S UGC01123       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5a9/member.uid___A001_X14c3_X5aa/calibrated/uid___A002_Xf0e992_X4711.ms
+
+# 2 srcs, 2 SBs
+NGC6427       2019.2.00028.S NGC6427        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5b2/member.uid___A001_X14c3_X5b3/calibrated/uid___A002_Xf0fd41_X14bb2.ms
+NGC6427       2019.2.00028.S NGC6427        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5b2/member.uid___A001_X14c3_X5b3/calibrated/uid___A002_Xf0fd41_Xc5ab.ms
+UGC10972      2019.2.00028.S UGC10972       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5b2/member.uid___A001_X14c3_X5b3/calibrated/uid___A002_Xf0fd41_X14bb2.ms
+UGC10972      2019.2.00028.S UGC10972       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5b2/member.uid___A001_X14c3_X5b3/calibrated/uid___A002_Xf0fd41_Xc5ab.ms
+
+# 2 srcs, 2 SBs
+NGC7311       2019.2.00028.S NGC7311        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c1/member.uid___A001_X14c3_X5c2/calibrated/uid___A002_Xf0fd41_X1621a.ms
+NGC7311       2019.2.00028.S NGC7311        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c1/member.uid___A001_X14c3_X5c2/calibrated/uid___A002_Xf0fd41_X1665a.ms
+UGC12224      2019.2.00028.S UGC12224       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c1/member.uid___A001_X14c3_X5c2/calibrated/uid___A002_Xf0fd41_X1621a.ms
+UGC12224      2019.2.00028.S UGC12224       7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c1/member.uid___A001_X14c3_X5c2/calibrated/uid___A002_Xf0fd41_X1665a.ms
+
+# 2 srcs, 1 SB
+MCG-01-52-012 2019.2.00028.S MCG-01-52-012  7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c7/member.uid___A001_X14c3_X5c8/calibrated/uid___A002_Xefa99d_Xcdb.ms
+UGC11649      2019.2.00028.S UGC11649       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5c7/member.uid___A001_X14c3_X5c8/calibrated/uid___A002_Xefa99d_Xcdb.ms
+
+# 1 src, 2 SBs
+NGC7025       2019.2.00028.S NGC7025        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5ca/member.uid___A001_X14c3_X5cb/calibrated/uid___A002_Xed17e1_X1ea8.ms
+NGC7025       2019.2.00028.S NGC7025        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5ca/member.uid___A001_X14c3_X5cb/calibrated/uid___A002_Xee5a15_X1775.ms
+
+# 2 srcs, 2 SBs
+NGC0001       2019.2.00028.S NGC0001        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5d0/member.uid___A001_X14c3_X5d1/calibrated/uid___A002_Xef6d27_X4c4.ms
+NGC0001       2019.2.00028.S NGC0001        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5d0/member.uid___A001_X14c3_X5d1/calibrated/uid___A002_Xef6d27_Xf87.ms
+NGC0169       2019.2.00028.S NGC0169        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5d0/member.uid___A001_X14c3_X5d1/calibrated/uid___A002_Xef6d27_X4c4.ms
+NGC0169       2019.2.00028.S NGC0169        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5d0/member.uid___A001_X14c3_X5d1/calibrated/uid___A002_Xef6d27_Xf87.ms
+
+UGC00312      2019.2.00028.S UGC00312       7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5d9/member.uid___A001_X14c3_X5da/calibrated/uid___A002_Xeea188_X3a3a.ms
+NGC0171       2019.2.00028.S NGC0171        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5df/member.uid___A001_X14c3_X5e0/calibrated/uid___A002_Xef72bb_X8555.ms
+
+# 2 srcs, 1 SB
+IC1528        2019.2.00028.S IC1528         7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5e2/member.uid___A001_X14c3_X5e3/calibrated/uid___A002_Xed9025_X8eb5.ms
+MCG-02-02-030 2019.2.00028.S MCG-02-02-030  7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X593/group.uid___A001_X14c3_X5e2/member.uid___A001_X14c3_X5e3/calibrated/uid___A002_Xed9025_X8eb5.ms
+
+NGC7716       2019.2.00028.S NGC7716        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X5e5/group.uid___A001_X14c3_X5e6/member.uid___A001_X14c3_X5e7/calibrated/uid___A002_Xee1eb6_X143d9.ms
+NGC7625       2019.2.00028.S NGC7625        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X5e5/group.uid___A001_X14c3_X5e9/member.uid___A001_X14c3_X5ea/calibrated/uid___A002_Xee1eb6_Xfb18.ms
+
+# 1 src, 2 SBs
+NGC1056       2019.2.00028.S NGC1056        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X5e5/group.uid___A001_X14c3_X5ef/member.uid___A001_X14c3_X5f0/calibrated/uid___A002_Xef6d27_X1481.ms
+NGC1056       2019.2.00028.S NGC1056        7m  2  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X5e5/group.uid___A001_X14c3_X5ef/member.uid___A001_X14c3_X5f0/calibrated/uid___A002_Xf031e1_Xab57.ms
+
+NGC0693       2019.2.00028.S NGC0693        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X5e5/group.uid___A001_X14c3_X5f2/member.uid___A001_X14c3_X5f3/calibrated/uid___A002_Xf031e1_Xa70a.ms
+NGC0955       2019.2.00028.S NGC0955        7m  1  2021/2019.2.00028.S/science_goal.uid___A001_X14c3_X5e5/group.uid___A001_X14c3_X5f5/member.uid___A001_X14c3_X5f6/calibrated/uid___A002_Xf096a9_X5f26.ms
+
+##########################################################################

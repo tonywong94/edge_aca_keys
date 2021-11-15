@@ -190,7 +190,7 @@
 #linmos_key           linearmosaic_definitions.txt
 #dir_key              dir_key.txt
 #imaging_key          imaging_recipes.txt
-#derived_key          derived_key.txt
+#derived_key	      derived_key.txt
 #override_key         overrides.txt
 
 #   ------------------------------------------------------------------------
@@ -199,29 +199,29 @@
 
 # Locations
 
-key_dir             /data2/wongt/aca_edge/edge_aca_keys/
-cleanmask_root      /data2/wongt/aca_edge/casaimaging/cleanmasks/
-imaging_root        /data2/wongt/aca_edge/casaimaging/imaging/
-postprocess_root    /data2/wongt/aca_edge/casaimaging/postprocess/
-derived_root        /data2/wongt/aca_edge/casaimaging/derived/
-release_root        /data2/wongt/aca_edge/casaimaging/release/
-ms_root             /data2/wongt/aca_edge/casaimaging/ms/
-singledish_root     /mnt/space/erosolow/edge/singledish/
+key_dir        	     	/data2/wongt/aca_edge/edge_aca_keys/tw_keys/
+cleanmask_root		/data2/wongt/aca_edge/casaimaging/cleanmasks/
+imaging_root		/data2/wongt/aca_edge/casaimaging/imaging/
+postprocess_root	/data2/wongt/aca_edge/casaimaging/postprocess/
+derived_root		/data2/wongt/aca_edge/casaimaging/derived/
+release_root		/data2/wongt/aca_edge/casaimaging/release/
+ms_root			/data2/wongt/aca_edge/
+singledish_root		/data2/wongt/aca_edge/casaimaging/singledish/
 
 # Data files
 
-ms_key              ms_file_key.txt
-singledish_key      singledish_key.txt
-cleanmask_key       cleanmask_key.txt
-distance_key        distance_key.txt
+ms_key			ms_file_key.txt
+singledish_key		singledish_key.txt
+cleanmask_key		cleanmask_key.txt
+distance_key		distance_key.txt
 
 # Definitions and mapping
 
-config_key          config_definitions.txt
-target_key          target_definitions.txt
-moment_key          moment_key.txt
-derived_key         derived_key.txt
-imaging_key         imaging_recipes.txt
-linmos_key          linearmosaic_definitions.txt
-override_key        overrides.txt
-dir_key             dir_key.txt
+config_key		config_definitions.txt
+target_key		target_definitions.txt
+moment_key		moment_key.txt
+derived_key		derived_key.txt
+imaging_key		imaging_recipes.txt
+linmos_key		linearmosaic_definitions.txt
+override_key		overrides.txt
+dir_key			dir_key.txt

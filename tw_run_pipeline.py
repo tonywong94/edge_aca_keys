@@ -10,12 +10,10 @@
 import os, sys
 
 # Locate the master key
-key_file = '/data2/wongt/aca_edge/edge_aca_keys/master_key_adata.txt'
+key_file = '/data2/wongt/aca_edge/edge_aca_keys/tw_keys/tw_master_key.txt'
 
 # Set directory for the pipeline and change to this directory
-pipedir = '/home/wongt/casa/phangs_imaging_scripts/'
-
-sys.path.append('/home/wongt/casa/analysis_scripts/')
+pipedir = '/data2/wongt/aca_edge/phangs_imaging_scripts/'
 os.chdir(pipedir)
 
 # Make sure we are inside CASA (modify this to use the command line version)
@@ -28,7 +26,10 @@ if not casa_enabled:
 # Set the logging
 from phangsPipeline import phangsLogger as pl
 reload(pl)
-pl.setup_logger(level='DEBUG', logfile=None)
+from datetime import datetime
+now = datetime.now()
+logfile = 'phangs-{}.txt'.format(now.strftime("%Y%m%d-%H%M%S"))
+pl.setup_logger(level='INFO', logfile=logfile)
 
 # Imports
 
@@ -51,7 +52,6 @@ this_kh = kh.KeyHandler(master_key = key_file)
 this_uvh = uvh.VisHandler(key_handler = this_kh)
 this_imh = imh.ImagingHandler(key_handler = this_kh)
 this_pph = pph.PostProcessHandler(key_handler= this_kh)
-#this_sth = sth.StatsHandler(key_handler= this_kh)
 
 # Make missing directories (optional)
 this_kh.make_missing_directories(imaging=True,derived=True,postprocess=True,release=True)
@@ -60,22 +60,20 @@ this_kh.make_missing_directories(imaging=True,derived=True,postprocess=True,rele
 # Set up what we do this run
 ##############################################################################
 
-# Set things to ACA only (7m and 7m+tp) and specify any targets
-
-
-gals = ['UGC11680NED02']
-this_uvh.set_targets(only=gals)
+this_uvh.set_targets()
 this_uvh.set_interf_configs(only=['7m'])
-this_uvh.set_line_products()
+this_uvh.set_line_products(only=['co21'])
 this_uvh.set_no_cont_products(True)
-# ,'ngc1097_lin','ngc1097_lpc'
-this_imh.set_targets(only=gals)
+
+this_imh.set_targets()
 this_imh.set_interf_configs(only=['7m'])
+this_imh.set_line_products(only=['co21'])
+this_imh.set_no_cont_products(True)
 
-
-# this_pph.set_targets(only=['ngc1097'])
-# this_pph.set_interf_configs(only=['7m'])
-# this_pph.set_feather_configs(only=['7m+tp'])
+this_pph.set_targets()
+this_pph.set_targets()
+this_pph.set_interf_configs()
+this_pph.set_feather_configs()
 
 # Switches for what steps to run
 
