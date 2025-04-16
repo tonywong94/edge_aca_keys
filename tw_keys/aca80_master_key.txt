@@ -200,13 +200,13 @@
 # Locations
 
 key_dir        	     	/data1/wongt/edge_aca_keys/tw_keys/
-cleanmask_root		/data1/wongt/aca_edge/casaimaging/cleanmasks/
-imaging_root		/data1/wongt/aca_edge/casaimaging/imaging/
-postprocess_root	/data1/wongt/aca_edge/casaimaging/postprocess/
-derived_root		/data1/wongt/aca_edge/casaimaging/derived/
-release_root		/data1/wongt/aca_edge/casaimaging/release/
+cleanmask_root		/data1/wongt/casaimaging/cleanmasks/
+imaging_root		/data1/wongt/casaimaging/imaging/
+postprocess_root	/data1/wongt/casaimaging/postprocess/
+derived_root		/data1/wongt/casaimaging/derived/
+release_root		/data1/wongt/casaimaging/release/
 ms_root			/data1/wongt/2024/
-singledish_root		/data1/wongt/aca_edge/casaimaging/singledish/
+singledish_root		/data1/wongt/casaimaging/singledish/
 
 # Data files
 
@@ -217,7 +217,7 @@ distance_key		aca80_distance_key.txt
 
 # Definitions and mapping
 
-config_key		config_definitions.txt
+config_key		aca80_config_defs.txt
 target_key		aca80_target_definitions.txt
 moment_key		moment_key.txt
 derived_key		derived_key.txt
